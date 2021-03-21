@@ -1,0 +1,1111 @@
+{
+  "Parameters": {
+    "mySiteBucketName": {
+      "Type": "String",
+      "Description": "The name of S3 bucket to upload react application"
+    },
+    "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68\""
+    },
+    "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68\""
+    },
+    "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68\""
+    },
+    "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf\""
+    },
+    "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf\""
+    },
+    "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfArtifactHash85F58E48": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf\""
+    },
+    "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cS3Bucket096AF66E": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"e38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850c\""
+    },
+    "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cS3VersionKey3085B3A6": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"e38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850c\""
+    },
+    "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cArtifactHash41176D88": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"e38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850c\""
+    },
+    "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0S3Bucket9DA06B94": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"a84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0\""
+    },
+    "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0S3VersionKey700D552E": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"a84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0\""
+    },
+    "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0ArtifactHash9F5AB65A": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"a84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0\""
+    }
+  },
+  "Resources": {
+    "ssrsite39803435": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": {
+          "Ref": "mySiteBucketName"
+        },
+        "WebsiteConfiguration": {
+          "ErrorDocument": "error.html",
+          "IndexDocument": "index.html"
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssr-site/Resource"
+      }
+    },
+    "ssrsitePolicy6685C54C": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "ssrsite39803435"
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*"
+              ],
+              "Effect": "Allow",
+              "Principal": {
+                "CanonicalUser": {
+                  "Fn::GetAtt": [
+                    "ssroia9E8C3143",
+                    "S3CanonicalUserId"
+                  ]
+                }
+              },
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "ssrsite39803435",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "ssrsite39803435",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "CanonicalUser": {
+                  "Fn::GetAtt": [
+                    "ssroia9E8C3143",
+                    "S3CanonicalUserId"
+                  ]
+                }
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "ssrsite39803435",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssr-site/Policy/Resource"
+      }
+    },
+    "ssroia9E8C3143": {
+      "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
+      "Properties": {
+        "CloudFrontOriginAccessIdentityConfig": {
+          "Comment": "Allows CloudFront to reach the bucket"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssr-oia/Resource"
+      }
+    },
+    "ClientsideReactappAwsCliLayer3157F352": {
+      "Type": "AWS::Lambda::LayerVersion",
+      "Properties": {
+        "Content": {
+          "S3Bucket": {
+            "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Description": "/opt/awscli/aws"
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/Client-side React app/AwsCliLayer/Resource",
+        "aws:asset:path": "asset.e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68.zip",
+        "aws:asset:property": "Content"
+      }
+    },
+    "ClientsideReactappCustomResource5A6F1300": {
+      "Type": "Custom::CDKBucketDeployment",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "Arn"
+          ]
+        },
+        "SourceBucketNames": [
+          {
+            "Ref": "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cS3Bucket096AF66E"
+          }
+        ],
+        "SourceObjectKeys": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cS3VersionKey3085B3A6"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cS3VersionKey3085B3A6"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "DestinationBucketName": {
+          "Ref": "ssrsite39803435"
+        },
+        "Prune": true
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "appStack/Client-side React app/CustomResource/Default"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cS3Bucket096AF66E"
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cS3Bucket096AF66E"
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*",
+                "s3:PutObject",
+                "s3:Abort*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "ssrsite39803435",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "ssrsite39803435",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+        "Roles": [
+          {
+            "Ref": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "Arn"
+          ]
+        },
+        "Handler": "index.handler",
+        "Layers": [
+          {
+            "Ref": "ClientsideReactappAwsCliLayer3157F352"
+          }
+        ],
+        "Runtime": "python3.6",
+        "Timeout": 900
+      },
+      "DependsOn": [
+        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "appStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource",
+        "aws:asset:path": "asset.c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+        "aws:asset:property": "Code"
+      }
+    },
+    "ssrHandlerServiceRole086FB3F9": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrHandler/ServiceRole/Resource"
+      }
+    },
+    "ssrHandler92F221AC": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0S3Bucket9DA06B94"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0S3VersionKey700D552E"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0S3VersionKey700D552E"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "ssrHandlerServiceRole086FB3F9",
+            "Arn"
+          ]
+        },
+        "Handler": "index.handler",
+        "MemorySize": 128,
+        "Runtime": "nodejs12.x",
+        "Timeout": 5
+      },
+      "DependsOn": [
+        "ssrHandlerServiceRole086FB3F9"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrHandler/Resource",
+        "aws:asset:path": "asset.a84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0",
+        "aws:asset:property": "Code"
+      }
+    },
+    "ssrEndpoint84341A64": {
+      "Type": "AWS::ApiGateway::RestApi",
+      "Properties": {
+        "Name": "ssrEndpoint"
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/Resource"
+      }
+    },
+    "ssrEndpointCloudWatchRoleCB6761D0": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "apigateway.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/CloudWatchRole/Resource"
+      }
+    },
+    "ssrEndpointAccountB096A98D": {
+      "Type": "AWS::ApiGateway::Account",
+      "Properties": {
+        "CloudWatchRoleArn": {
+          "Fn::GetAtt": [
+            "ssrEndpointCloudWatchRoleCB6761D0",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "ssrEndpoint84341A64"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/Account"
+      }
+    },
+    "ssrEndpointDeployment345D704Bfd4a46cf07bd1b01d6325124f54952c5": {
+      "Type": "AWS::ApiGateway::Deployment",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ssrEndpoint84341A64"
+        },
+        "Description": "Automatically created by the RestApi construct"
+      },
+      "DependsOn": [
+        "ssrEndpointproxyANY3E259960",
+        "ssrEndpointproxyF8CFA92E",
+        "ssrEndpointANY37B36243"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/Deployment/Resource"
+      }
+    },
+    "ssrEndpointDeploymentStageprod71C11F15": {
+      "Type": "AWS::ApiGateway::Stage",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ssrEndpoint84341A64"
+        },
+        "DeploymentId": {
+          "Ref": "ssrEndpointDeployment345D704Bfd4a46cf07bd1b01d6325124f54952c5"
+        },
+        "StageName": "prod"
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/DeploymentStage.prod/Resource"
+      }
+    },
+    "ssrEndpointproxyF8CFA92E": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ssrEndpoint84341A64",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "{proxy+}",
+        "RestApiId": {
+          "Ref": "ssrEndpoint84341A64"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/Default/{proxy+}/Resource"
+      }
+    },
+    "ssrEndpointproxyANYApiPermissionappStackssrEndpointBEAA0225ANYproxyC598DAC6": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ssrHandler92F221AC",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ssrEndpoint84341A64"
+              },
+              "/",
+              {
+                "Ref": "ssrEndpointDeploymentStageprod71C11F15"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/Default/{proxy+}/ANY/ApiPermission.appStackssrEndpointBEAA0225.ANY..{proxy+}"
+      }
+    },
+    "ssrEndpointproxyANYApiPermissionTestappStackssrEndpointBEAA0225ANYproxy9C672FF2": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ssrHandler92F221AC",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ssrEndpoint84341A64"
+              },
+              "/test-invoke-stage/*/*"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/Default/{proxy+}/ANY/ApiPermission.Test.appStackssrEndpointBEAA0225.ANY..{proxy+}"
+      }
+    },
+    "ssrEndpointproxyANY3E259960": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "ANY",
+        "ResourceId": {
+          "Ref": "ssrEndpointproxyF8CFA92E"
+        },
+        "RestApiId": {
+          "Ref": "ssrEndpoint84341A64"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-east-2:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "ssrHandler92F221AC",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/Default/{proxy+}/ANY/Resource"
+      }
+    },
+    "ssrEndpointANYApiPermissionappStackssrEndpointBEAA0225ANY94816555": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ssrHandler92F221AC",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ssrEndpoint84341A64"
+              },
+              "/",
+              {
+                "Ref": "ssrEndpointDeploymentStageprod71C11F15"
+              },
+              "/*/"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/Default/ANY/ApiPermission.appStackssrEndpointBEAA0225.ANY.."
+      }
+    },
+    "ssrEndpointANYApiPermissionTestappStackssrEndpointBEAA0225ANYB843015C": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ssrHandler92F221AC",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ssrEndpoint84341A64"
+              },
+              "/test-invoke-stage/*/"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/Default/ANY/ApiPermission.Test.appStackssrEndpointBEAA0225.ANY.."
+      }
+    },
+    "ssrEndpointANY37B36243": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "ANY",
+        "ResourceId": {
+          "Fn::GetAtt": [
+            "ssrEndpoint84341A64",
+            "RootResourceId"
+          ]
+        },
+        "RestApiId": {
+          "Ref": "ssrEndpoint84341A64"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-east-2:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "ssrHandler92F221AC",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssrEndpoint/Default/ANY/Resource"
+      }
+    },
+    "ssrcdnCFDistribution499355C4": {
+      "Type": "AWS::CloudFront::Distribution",
+      "Properties": {
+        "DistributionConfig": {
+          "CacheBehaviors": [
+            {
+              "AllowedMethods": [
+                "GET",
+                "HEAD"
+              ],
+              "CachedMethods": [
+                "GET",
+                "HEAD"
+              ],
+              "Compress": true,
+              "ForwardedValues": {
+                "Cookies": {
+                  "Forward": "none"
+                },
+                "QueryString": false
+              },
+              "PathPattern": "/ssr",
+              "TargetOriginId": "origin2",
+              "ViewerProtocolPolicy": "redirect-to-https"
+            }
+          ],
+          "DefaultCacheBehavior": {
+            "AllowedMethods": [
+              "GET",
+              "HEAD"
+            ],
+            "CachedMethods": [
+              "GET",
+              "HEAD"
+            ],
+            "Compress": true,
+            "ForwardedValues": {
+              "Cookies": {
+                "Forward": "none"
+              },
+              "QueryString": false
+            },
+            "TargetOriginId": "origin1",
+            "ViewerProtocolPolicy": "redirect-to-https"
+          },
+          "DefaultRootObject": "index.html",
+          "Enabled": true,
+          "HttpVersion": "http2",
+          "IPV6Enabled": true,
+          "Origins": [
+            {
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "DomainName": {
+                "Fn::GetAtt": [
+                  "ssrsite39803435",
+                  "RegionalDomainName"
+                ]
+              },
+              "Id": "origin1",
+              "S3OriginConfig": {
+                "OriginAccessIdentity": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "origin-access-identity/cloudfront/",
+                      {
+                        "Ref": "ssroia9E8C3143"
+                      }
+                    ]
+                  ]
+                }
+              }
+            },
+            {
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "CustomOriginConfig": {
+                "HTTPPort": 80,
+                "HTTPSPort": 443,
+                "OriginKeepaliveTimeout": 5,
+                "OriginProtocolPolicy": "https-only",
+                "OriginReadTimeout": 30,
+                "OriginSSLProtocols": [
+                  "TLSv1.2"
+                ]
+              },
+              "DomainName": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Ref": "ssrEndpoint84341A64"
+                    },
+                    ".execute-api.us-east-2.amazonaws.com"
+                  ]
+                ]
+              },
+              "Id": "origin2",
+              "OriginPath": "/prod"
+            }
+          ],
+          "PriceClass": "PriceClass_100",
+          "ViewerCertificate": {
+            "CloudFrontDefaultCertificate": true
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/ssr-cdn/CFDistribution"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAACm1RwW7CMAz9Fu5pUGGH7bZShDSJCQTSdg6pYYE0qeJkrIr670tSSjlw8rPj+Pk95/TtheaTd3bFjFeXqefaAPV7y/iFlEe1ZYbVYMGQUiu0xnEbyxtnG2dJgQg29J6EOpEdoHaGAykdWl2P6VENuCORx+Oc+oXjF0izbqgPWy0Fb8dyn3eES+2qo9HKUr8xIhAWnAPiRwXKCpt+lLFnFXued9yfv+GwFEGMODgrtIp/H/OO4DzzFTRSt3X4TPtVlvcCYVE30iS/I5LVh4pRH8asWQvmCwzGsfvgigSr1copnojuILQ+4i2YWiAmbsFq6nda9sbFOHoyuMEacWIWrqylfp3Yg8O2aMTN7AEGB7QL+z6sHrWOWbxdIurBcKcFw0Br9F/77IrkE+yPrmKpR93gQSaj/iwcmUtBiyuWUiRLOqJ0BfSM0998RvNXOpucUYjMhO1EDXTXx3/kA9BnjgIAAA=="
+      },
+      "Metadata": {
+        "aws:cdk:path": "appStack/CDKMetadata/Default"
+      }
+    }
+  },
+  "Outputs": {
+    "Bucket": {
+      "Value": {
+        "Ref": "ssrsite39803435"
+      }
+    },
+    "ssrEndpoint02F5615F": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "https://",
+            {
+              "Ref": "ssrEndpoint84341A64"
+            },
+            ".execute-api.us-east-2.",
+            {
+              "Ref": "AWS::URLSuffix"
+            },
+            "/",
+            {
+              "Ref": "ssrEndpointDeploymentStageprod71C11F15"
+            },
+            "/"
+          ]
+        ]
+      }
+    },
+    "SSRAPIURL": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "https://",
+            {
+              "Ref": "ssrEndpoint84341A64"
+            },
+            ".execute-api.us-east-2.",
+            {
+              "Ref": "AWS::URLSuffix"
+            },
+            "/",
+            {
+              "Ref": "ssrEndpointDeploymentStageprod71C11F15"
+            },
+            "/"
+          ]
+        ]
+      }
+    },
+    "CFURL": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "https://",
+            {
+              "Fn::GetAtt": [
+                "ssrcdnCFDistribution499355C4",
+                "DomainName"
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "LambdaSSRURL": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "https://",
+            {
+              "Fn::GetAtt": [
+                "ssrcdnCFDistribution499355C4",
+                "DomainName"
+              ]
+            },
+            "/ssr"
+          ]
+        ]
+      }
+    }
+  }
+}

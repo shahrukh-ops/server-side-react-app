@@ -1,0 +1,2157 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "BackEndApi": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/us-east-2",
+      "properties": {
+        "templateFile": "BackEndApi.template.json"
+      },
+      "metadata": {
+        "/BackEndApi": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3d",
+              "id": "1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3d",
+              "packaging": "zip",
+              "sourceHash": "1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3d",
+              "s3BucketParameter": "AssetParameters1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3dS3Bucket7B336B38",
+              "s3KeyParameter": "AssetParameters1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3dS3VersionKey61BD4CA6",
+              "artifactHashParameter": "AssetParameters1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3dArtifactHashB96D5C65"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ApiStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:10:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiHandlerServiceRoleF61AABDA",
+            "trace": [
+              "new Role (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:560:31)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:10:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiHandler8027B936",
+            "trace": [
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:622:35)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:10:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/AssetParameters/1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3d/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3dS3Bucket7B336B38",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ApiStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:10:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/AssetParameters/1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3d/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3dS3VersionKey61BD4CA6",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ApiStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:10:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/AssetParameters/1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3d/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1a3ff0f676d53922cfb2fda1686c2a11147a7168d8e84874bc48227325233f3dArtifactHashB96D5C65",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ApiStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:10:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpoint154F0C18",
+            "trace": [
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:694:22)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointCloudWatchRole75D09583",
+            "trace": [
+              "new Role (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "LambdaRestApi.configureCloudWatchRole (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:494:18)",
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:711:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointAccount7ECC9ADA",
+            "trace": [
+              "LambdaRestApi.configureCloudWatchRole (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:499:22)",
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:711:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointDeploymentDCAB24BF3b0331be4c846eead6f585f72b2c7956",
+            "trace": [
+              "new Deployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\deployment.ts:75:21)",
+              "LambdaRestApi.configureDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:510:32)",
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:714:10)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointDeploymentStageprod8BE4C8B3",
+            "trace": [
+              "new Stage (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\stage.ts:240:22)",
+              "LambdaRestApi.configureDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:520:30)",
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:714:10)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpoint10A5FB54",
+            "trace": [
+              "LambdaRestApi.configureDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:525:7)",
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:714:10)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Default/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointOPTIONS4ED99C11",
+            "trace": [
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:215:22)",
+              "RootResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "RootResource.addCorsPreflight (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:293:17)",
+              "new RootResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:872:12)",
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:719:17)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointproxy32486DF7",
+            "trace": [
+              "new Resource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:446:22)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:518:5)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Default/{proxy+}/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointproxyOPTIONS015491E4",
+            "trace": [
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:215:22)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:540:18)",
+              "ProxyResource.addCorsPreflight (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:293:17)",
+              "new Resource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:472:12)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:518:5)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Default/{proxy+}/ANY/ApiPermission.BackEndApiapiEndpoint7A77AC3C.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointproxyANYApiPermissionBackEndApiapiEndpoint7A77AC3CANYproxy64BBC562",
+            "trace": [
+              "Function.addPermission (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "LambdaIntegration.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:63:18)",
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:197:36)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:540:18)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Default/{proxy+}/ANY/ApiPermission.Test.BackEndApiapiEndpoint7A77AC3C.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointproxyANYApiPermissionTestBackEndApiapiEndpoint7A77AC3CANYproxy4A73507B",
+            "trace": [
+              "Function.addPermission (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "LambdaIntegration.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:71:20)",
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:197:36)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:540:18)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointproxyANY17899448",
+            "trace": [
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:215:22)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:540:18)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Default/ANY/ApiPermission.BackEndApiapiEndpoint7A77AC3C.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointANYApiPermissionBackEndApiapiEndpoint7A77AC3CANY6C1D28D0",
+            "trace": [
+              "Function.addPermission (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "LambdaIntegration.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:63:18)",
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:197:36)",
+              "RootResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:537:29)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Default/ANY/ApiPermission.Test.BackEndApiapiEndpoint7A77AC3C.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointANYApiPermissionTestBackEndApiapiEndpoint7A77AC3CANY170F515D",
+            "trace": [
+              "Function.addPermission (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "LambdaIntegration.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:71:20)",
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:197:36)",
+              "RootResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:537:29)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiEndpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpointANY36EFCDEA",
+            "trace": [
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:215:22)",
+              "RootResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:537:29)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:18:17)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/apiurl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiurl",
+            "trace": [
+              "new ApiStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\api-stack.ts:26:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/BackEndApi/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:201:5)",
+              "visit (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:197:5)",
+              "injectMetadataResources (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:482:12)",
+              "process.emit (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\source-map-support\\source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ]
+      }
+    },
+    "appStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/us-east-2",
+      "properties": {
+        "templateFile": "appStack.template.json"
+      },
+      "metadata": {
+        "/appStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68.zip",
+              "id": "e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68",
+              "packaging": "file",
+              "sourceHash": "e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68",
+              "s3BucketParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7",
+              "s3KeyParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F",
+              "artifactHashParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new LayerVersion (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:189:29)",
+              "new AwsCliLayer (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\lambda-layer-awscli\\lib\\awscli-layer.ts:12:5)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:193:16)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+              "id": "c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+              "packaging": "zip",
+              "sourceHash": "c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+              "s3BucketParameter": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C",
+              "s3KeyParameter": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70",
+              "artifactHashParameter": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfArtifactHash85F58E48"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "SingletonFunction.ensureLambda (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:190:21)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.e38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850c",
+              "id": "e38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850c",
+              "packaging": "zip",
+              "sourceHash": "e38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850c",
+              "s3BucketParameter": "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cS3Bucket096AF66E",
+              "s3KeyParameter": "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cS3VersionKey3085B3A6",
+              "artifactHashParameter": "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cArtifactHash41176D88"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "Object.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:86:23)",
+              "D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:207:51)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.a84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0",
+              "id": "a84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0",
+              "packaging": "zip",
+              "sourceHash": "a84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0",
+              "s3BucketParameter": "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0S3Bucket9DA06B94",
+              "s3KeyParameter": "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0S3VersionKey700D552E",
+              "artifactHashParameter": "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0ArtifactHash9F5AB65A"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:39:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/mySiteBucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mySiteBucketName",
+            "trace": [
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:13:30)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssr-site/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrsite39803435",
+            "trace": [
+              "new Bucket (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:1331:22)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:18:26)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssr-site/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrsitePolicy6685C54C",
+            "trace": [
+              "new BucketPolicy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket-policy.ts:42:21)",
+              "Bucket.addToResourcePolicy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:504:21)",
+              "Function.addToPrincipalOrResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:147:45)",
+              "Bucket.grant (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:723:27)",
+              "Bucket.grantRead (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:601:17)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:32:18)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Bucket",
+            "trace": [
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:26:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssr-oia/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssroia9E8C3143",
+            "trace": [
+              "new OriginAccessIdentity (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-cloudfront\\lib\\origin-access-identity.ts:112:21)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:28:34)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/Client-side React app/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ClientsideReactappAwsCliLayer3157F352",
+            "trace": [
+              "new LayerVersion (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:197:39)",
+              "new AwsCliLayer (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\lambda-layer-awscli\\lib\\awscli-layer.ts:12:5)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:193:16)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/Client-side React app/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ClientsideReactappCustomResource5A6F1300",
+            "trace": [
+              "new CustomResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\custom-resource.ts:119:21)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:218:5)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new LayerVersion (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:189:29)",
+              "new AwsCliLayer (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\lambda-layer-awscli\\lib\\awscli-layer.ts:12:5)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:193:16)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new LayerVersion (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:189:29)",
+              "new AwsCliLayer (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\lambda-layer-awscli\\lib\\awscli-layer.ts:12:5)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:193:16)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new LayerVersion (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:189:29)",
+              "new AwsCliLayer (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\lambda-layer-awscli\\lib\\awscli-layer.ts:12:5)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:193:16)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "SingletonFunction.ensureLambda (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:190:21)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "SingletonFunction.ensureLambda (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:190:21)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfArtifactHash85F58E48",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "SingletonFunction.ensureLambda (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:190:21)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/e38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850c/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cS3Bucket096AF66E",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "Object.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:86:23)",
+              "D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:207:51)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/e38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850c/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cS3VersionKey3085B3A6",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "Object.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:86:23)",
+              "D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:207:51)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/e38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850c/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse38bddc4812cd49551a71bf6aef4557a6db0566c96c3434b89b839810b96850cArtifactHash41176D88",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "Object.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:86:23)",
+              "D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:207:51)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/a84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0S3Bucket9DA06B94",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:39:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/a84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0S3VersionKey700D552E",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:39:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/AssetParameters/a84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa84221045f139d2f39baae073ce805625595f6109615fe61400f5e6ab24402e0ArtifactHash9F5AB65A",
+            "trace": [
+              "new FileAssetParameters (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SsrStack.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:143:40)",
+              "AssetCode.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:277:20)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:580:29)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:39:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "trace": [
+              "new Role (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:560:31)",
+              "SingletonFunction.ensureLambda (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:190:21)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+            "trace": [
+              "new Policy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:368:28)",
+              "Function.addToPrincipal (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:168:61)",
+              "Function.addToPrincipalOrResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:119:26)",
+              "Import.grant (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:723:27)",
+              "Import.grantRead (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:601:17)",
+              "Asset.grantRead (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:202:17)",
+              "Object.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:93:15)",
+              "D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:207:51)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "trace": [
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:622:35)",
+              "SingletonFunction.ensureLambda (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:190:21)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:34:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrHandlerServiceRole086FB3F9",
+            "trace": [
+              "new Role (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:560:31)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:39:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrHandler92F221AC",
+            "trace": [
+              "new Function (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:622:35)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:39:25)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpoint84341A64",
+            "trace": [
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:694:22)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpointCloudWatchRoleCB6761D0",
+            "trace": [
+              "new Role (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "LambdaRestApi.configureCloudWatchRole (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:494:18)",
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:711:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpointAccountB096A98D",
+            "trace": [
+              "LambdaRestApi.configureCloudWatchRole (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:499:22)",
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:711:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpointDeployment345D704Bfd4a46cf07bd1b01d6325124f54952c5",
+            "trace": [
+              "new Deployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\deployment.ts:75:21)",
+              "LambdaRestApi.configureDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:510:32)",
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:714:10)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpointDeploymentStageprod71C11F15",
+            "trace": [
+              "new Stage (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\stage.ts:240:22)",
+              "LambdaRestApi.configureDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:520:30)",
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:714:10)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpoint02F5615F",
+            "trace": [
+              "LambdaRestApi.configureDeployment (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:525:7)",
+              "new RestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:714:10)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpointproxyF8CFA92E",
+            "trace": [
+              "new Resource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:446:22)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:518:5)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/Default/{proxy+}/ANY/ApiPermission.appStackssrEndpointBEAA0225.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpointproxyANYApiPermissionappStackssrEndpointBEAA0225ANYproxyC598DAC6",
+            "trace": [
+              "Function.addPermission (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "LambdaIntegration.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:63:18)",
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:197:36)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:540:18)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/Default/{proxy+}/ANY/ApiPermission.Test.appStackssrEndpointBEAA0225.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpointproxyANYApiPermissionTestappStackssrEndpointBEAA0225ANYproxy9C672FF2",
+            "trace": [
+              "Function.addPermission (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "LambdaIntegration.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:71:20)",
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:197:36)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:540:18)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpointproxyANY3E259960",
+            "trace": [
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:215:22)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:540:18)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/Default/ANY/ApiPermission.appStackssrEndpointBEAA0225.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpointANYApiPermissionappStackssrEndpointBEAA0225ANY94816555",
+            "trace": [
+              "Function.addPermission (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "LambdaIntegration.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:63:18)",
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:197:36)",
+              "RootResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:537:29)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/Default/ANY/ApiPermission.Test.appStackssrEndpointBEAA0225.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpointANYApiPermissionTestappStackssrEndpointBEAA0225ANYB843015C",
+            "trace": [
+              "Function.addPermission (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "LambdaIntegration.bind (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:71:20)",
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:197:36)",
+              "RootResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:537:29)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssrEndpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrEndpointANY37B36243",
+            "trace": [
+              "new Method (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:215:22)",
+              "RootResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:187:12)",
+              "ProxyResource.addMethod (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:537:29)",
+              "new ProxyResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:527:29)",
+              "RootResource.addProxy (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:191:12)",
+              "new LambdaRestApi (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:61:20)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/SSR API URL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SSRAPIURL",
+            "trace": [
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:65:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/ssr-cdn/CFDistribution": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ssrcdnCFDistribution499355C4",
+            "trace": [
+              "new CloudFrontWebDistribution (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\aws-cloudfront\\lib\\web-distribution.ts:929:26)",
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:69:26)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/CF URL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CFURL",
+            "trace": [
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:107:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/Lambda SSR URL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaSSRURL",
+            "trace": [
+              "new SsrStack (D:\\AWS-REACT-APP\\server-side-react\\cdk\\lib\\app-stack.ts:110:5)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\bin\\cdk.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/appStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:201:5)",
+              "visit (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:197:5)",
+              "injectMetadataResources (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:482:12)",
+              "process.emit (D:\\AWS-REACT-APP\\server-side-react\\cdk\\node_modules\\source-map-support\\source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
